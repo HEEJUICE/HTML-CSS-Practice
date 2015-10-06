@@ -1,0 +1,66 @@
+* {
+    font-size: 14px;
+}
+body {
+    background-color: black;
+}
+h1 {
+    color: white;
+    font-family: 'Dancing Script', cursive, sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 10rem;
+}
+.letters {
+    list-style: none;
+    text-align: center;
+}
+.letters li {
+    display: inline-block;
+    width: 30%;
+    margin-top: 2rem;
+}
+.letter:hover {
+    opacity: .70;
+    cursor: pointer;
+}
+.smoke {
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    width: 30rem;
+    margin-left: -15rem;
+    top: 0;
+}
+.fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: .70;
+}
+#content {
+    position: absolute;
+    top: 15rem;
+    color: black;
+    z-index: 1;
+    background-color: white;
+    left: 50%;
+    width: 30rem;
+    text-align: center;
+    margin-left: -15rem;
+    overflow: scroll;
+    border-radius: 3px;
+    opacity: 0;
+    height: 0;
+    transform: rotate(0deg) scale(0);
+    transition: transform 2s, opacity 2s, height 1s;
+}
+#content.opened {
+    opacity: 1;
+    height: 23rem;
+    transform: rotate(370deg) scale(1);
+}

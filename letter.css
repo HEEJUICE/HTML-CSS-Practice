@@ -1,0 +1,77 @@
+/* line 1, /Users/HEEJU/Desktop/kljuyt.github.io/letter.scss */
+* {
+  font-size: 14px; }
+
+/* line 4, /Users/HEEJU/Desktop/kljuyt.github.io/letter.scss */
+body {
+  background-color: black; }
+
+/* line 7, /Users/HEEJU/Desktop/kljuyt.github.io/letter.scss */
+h1 {
+  color: white;
+  font-family: 'Dancing Script', cursive, sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 10rem; }
+
+/* line 15, /Users/HEEJU/Desktop/kljuyt.github.io/letter.scss */
+.letters {
+  list-style: none;
+  text-align: center; }
+
+/* line 19, /Users/HEEJU/Desktop/kljuyt.github.io/letter.scss */
+.letters li {
+  display: inline-block;
+  width: 30%;
+  margin-top: 2rem; }
+
+/* line 24, /Users/HEEJU/Desktop/kljuyt.github.io/letter.scss */
+.letter:hover {
+  opacity: .70;
+  cursor: pointer; }
+
+/* line 28, /Users/HEEJU/Desktop/kljuyt.github.io/letter.scss */
+.smoke {
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  width: 30rem;
+  margin-left: -15rem;
+  top: 0; }
+
+/* line 36, /Users/HEEJU/Desktop/kljuyt.github.io/letter.scss */
+.fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: .70; }
+
+/* line 45, /Users/HEEJU/Desktop/kljuyt.github.io/letter.scss */
+#content {
+  position: absolute;
+  top: 15rem;
+  color: black;
+  z-index: 1;
+  background-color: white;
+  left: 50%;
+  width: 30rem;
+  text-align: center;
+  margin-left: -15rem;
+  overflow: scroll;
+  border-radius: 3px;
+  opacity: 0;
+  height: 0;
+  transform: rotate(0deg) scale(0);
+  transition: transform 2s, opacity 2s, height 1s; }
+
+/* line 62, /Users/HEEJU/Desktop/kljuyt.github.io/letter.scss */
+#content.opened {
+  opacity: 1;
+  height: 23rem;
+  transform: rotate(370deg) scale(1); }
+
+/*# sourceMappingURL=letter.css.map */
