@@ -33,12 +33,17 @@ h1 {
     margin-left: -15rem;
     top: 0;
 }
-.fill {
+#fill {
+    height: 0;
+    background-color: black;
+    opacity: 0;
+}
+#fill.open {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    height: 100%;
     background-color: black;
     opacity: .70;
 }
@@ -57,7 +62,7 @@ h1 {
     opacity: 0;
     height: 0;
     transform: rotate(0deg) scale(0);
-    transition: transform 2s, opacity 2s, height 1s;
+    transition: transform 2s, opacity 3s, height 1s;
 }
 #content.opened {
     opacity: 1;
