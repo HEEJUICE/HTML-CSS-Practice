@@ -53,8 +53,53 @@ body {
     margin-left: -5rem;
     z-index: 10;
 }
+.letter:hover {
+    opacity: .70;
+    cursor: pointer;
+}
+#fill {
+    height: 0;
+    background-color: black;
+    opacity: 0;
+    z-index: 30;
+}
+#fill.open {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-color: black;
+    opacity: .70;
+    z-index: 20;
+}
+#content {
+    position: absolute;
+    top: 15rem;
+    color: black;
+    z-index: 30;
+    background-color: white;
+    left: 50%;
+    width: 30rem;
+    text-align: center;
+    margin-left: -15rem;
+    overflow: scroll;
+    border-radius: 3px;
+    opacity: 0;
+    height: 0;
+    transform: rotate(0deg) scale(0);
+    transition: transform 2s, opacity 3s, height 1s;
+    vertical-align: middle;
+}
+#content.opened {
+    opacity: 1;
+    height: 23rem;
+    transform: rotate(0deg) scale(1);
+    z-index: 30;
+}
 .원문 {
     position: absolute;
+    left: 5rem;
     color: white;
     font-size: 20px;
     width: 15rem;
@@ -66,7 +111,7 @@ body {
 }
 .원문1 {
     position: absolute;
-    right: 0;
+    right: 5rem;
     color: white;
     font-size: 20px;
     width: 15rem;
