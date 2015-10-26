@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "JS_Project.css",
+  "sources": [
+    "JS_Project.scss"
+  ],
+  "sourcesContent": [],
+  "mappings": ";AAAA,IAAI,CAAC;EACD,OAAO,EAAE,YAAa;EACtB,MAAM,EAAE,KAAM;EACd,KAAK,EAAE,IAAK;EACZ,gBAAgB,EAAE,GAAI;EACtB,MAAM,EAAE,MAAO;EACf,QAAQ,EAAE,MAAO,GANf",
+  "names": []
+}
