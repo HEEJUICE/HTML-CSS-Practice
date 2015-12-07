@@ -22,12 +22,14 @@ $(function () {
 });
 
 $(document).ready(function () {
+    'use strict';
     $('.right').after('<p class="clear">&nbsp</p>');
 });
 
 $(window).scroll(function () {
+    'use strict';
     var scrolltop = $(window).scrollTop();
-    if (scrolltop == $(document).height() - $(window).height()) {
+    if (scrolltop === $(document).height() - $(window).height()) {
         $('#content').addClass('opened');
         $('#fill').addClass('open');
     }

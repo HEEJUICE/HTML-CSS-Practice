@@ -61,16 +61,18 @@
   .topmenu > li.title {
     font-family: cursive;
     position: absolute;
-    left: 0; }
-  /* line 65, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
+    left: 0;
+    margin-left: 1rem; }
+  /* line 66, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
   .topmenu > li.list {
     display: inline-block;
-    text-align: center; }
-  /* line 69, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
+    text-align: center;
+    margin: 0 1rem; }
+  /* line 71, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
   .topmenu > li.list:hover {
     border-bottom: 1px solid black; }
 
-/* line 73, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
+/* line 75, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
 .content {
   position: absolute;
   left: 0;
@@ -81,12 +83,12 @@
   background-color: black;
   color: white; }
 
-/* line 83, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
+/* line 85, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
 .one {
   background-color: black;
   color: white; }
 
-/* line 89, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
+/* line 91, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
 .dupin,
 .i,
 .g {
@@ -94,16 +96,16 @@
   width: 18rem;
   color: white; }
 
-/* line 95, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
+/* line 97, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
 .dupin,
 .i {
   left: 15%; }
 
-/* line 98, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
+/* line 100, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
 .g {
   right: 15%; }
 
-/* line 101, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
+/* line 103, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
 .explanation {
   position: absolute;
   left: 2rem;
@@ -113,7 +115,7 @@
   text-align: center;
   color: white; }
 
-/* line 112, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
+/* line 114, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
 .dupinsaid,
 .isaid,
 .gsaid {
@@ -121,140 +123,140 @@
   font-family: sans-serif;
   font-weight: 900; }
 
-/* line 117, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
+/* line 119, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
 .dupinsaid {
   color: darkseagreen; }
 
-/* line 120, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
+/* line 122, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
 .isaid {
-  color: red; }
+  color: #71dcff; }
 
-/* line 123, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
+/* line 125, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
 .gsaid {
-  color: yellow; }
+  color: #9971ff; }
 
-/* line 126, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
+/* line 128, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
 .dupin1 {
   position: absolute;
   top: 30rem; }
 
-/* line 130, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
+/* line 132, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
 .g1 {
   top: 50rem; }
 
-/* line 133, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
+/* line 135, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
 .dupin2 {
   top: 70rem; }
 
-/* line 136, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
+/* line 138, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
 .i1 {
   top: 80rem; }
 
-/* line 139, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
+/* line 141, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
 .g2 {
   top: 100rem; }
 
-/* line 142, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
+/* line 144, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
 .dupin3 {
   top: 130rem; }
 
-/* line 145, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
+/* line 147, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
 .g3 {
   top: 140rem; }
 
-/* line 148, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
+/* line 150, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
 .dupin4 {
   top: 160rem; }
 
-/* line 151, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
+/* line 153, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
 .g4 {
   top: 180rem; }
 
-/* line 154, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
+/* line 156, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
 .dupin5 {
   top: 190rem; }
 
-/* line 157, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
+/* line 159, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
 .g5 {
   top: 200rem; }
 
-/* line 160, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
+/* line 162, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
 .dupin6 {
   top: 210rem; }
 
-/* line 163, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
+/* line 165, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
 .g6 {
   top: 220rem; }
 
-/* line 166, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
+/* line 168, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
 .i2 {
   top: 240rem; }
 
-/* line 169, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
+/* line 171, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
 .g7 {
   top: 250rem; }
 
-/* line 172, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
+/* line 174, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
 .i3 {
   top: 290rem; }
 
-/* line 175, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
+/* line 177, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
 .dupin7 {
   top: 300rem; }
 
-/* line 178, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
+/* line 180, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
 .g8 {
   top: 310rem; }
 
-/* line 181, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
+/* line 183, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
 .dupin8 {
   top: 350rem; }
 
-/* line 184, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
+/* line 186, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
 .g9 {
   top: 360rem; }
 
-/* line 187, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
+/* line 189, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
 .i4 {
   top: 400rem; }
 
-/* line 190, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
+/* line 192, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
 .g10 {
   top: 410rem; }
 
-/* line 193, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
+/* line 195, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
 .dupin10 {
   top: 430rem; }
 
-/* line 196, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
+/* line 198, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
 .g11 {
   top: 440rem; }
 
-/* line 199, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
+/* line 201, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
 .i5 {
   top: 485rem; }
 
-/* line 202, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
+/* line 204, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
 .g12 {
   top: 510rem; }
 
-/* line 205, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
+/* line 207, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
 .dupin11 {
   top: 690rem; }
 
-/* line 208, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
+/* line 210, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
 .g13 {
   top: 715rem; }
 
-/* line 211, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
+/* line 213, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
 .dupin12 {
   top: 765rem; }
 
-/* line 214, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
+/* line 216, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
 .g14 {
   top: 785rem; }
 
-/* line 217, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
+/* line 219, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
 .letter {
   position: fixed;
   margin: auto;
@@ -265,28 +267,28 @@
   z-index: 0; }
 
 @media (max-width: 450px) {
-  /* line 227, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
+  /* line 229, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
   .topmenu li {
     font-size: 70%;
     padding: 5px; }
-  /* line 231, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
+  /* line 233, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
   .info li {
     font-size: 85%; } }
 
-/* line 235, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
+/* line 237, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
 .second {
   margin-top: 803rem;
   width: 100%;
   height: 100%;
   color: white; }
 
-/* line 241, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
+/* line 243, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
 #fill {
   height: 0;
   background-color: black;
   opacity: 0; }
 
-/* line 246, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
+/* line 248, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
 #fill.open {
   position: fixed;
   top: 0;
@@ -296,7 +298,7 @@
   background-color: black;
   opacity: .70; }
 
-/* line 255, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
+/* line 257, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
 #content {
   position: fixed;
   top: 15rem;
@@ -314,7 +316,7 @@
   transform: rotate(0deg) scale(0);
   transition: transform 2s, opacity 3s, height 1s; }
 
-/* line 272, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
+/* line 274, /Users/HEEJU/Desktop/kljuyt.github.io/purloined_letter.scss */
 #content.opened {
   opacity: 1;
   height: 23rem;

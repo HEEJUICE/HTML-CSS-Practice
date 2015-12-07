@@ -2,10 +2,52 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-<title>씐나는 html with 규영교수늼</title>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="initial-scale=1.0, width=device-width">
+    <title>Tree</title>
 </head>
+
 <body>
-  우와아아아ㅏ아앙앙
+    <canvas width="1000" height="810"></canvas>
+    <script>
+        function main() {
+            var canvas = document.querySelector('canvas');
+            var ctx = canvas.getContext('2d');
+            ctx.strokeStyle = "black";
+            stroke(ctx, 300, 810, 150, 1.5 * Math.PI, 9, '#000');
+        }
+
+        function stroke(ctx, x, y, d, t, step, color) {
+            if (step === 0) return;
+
+            var x2 = d * Math.cos(t) + x;
+            var y2 = d * Math.sin(t) + y;
+
+            ctx.lineWidth = Math.pow(step * 0.3, 2.5);
+            ctx.lineCap = 'round';
+            ctx.strokeStyle = color;
+            ctx.beginPath();
+            ctx.moveTo(x, y);
+            ctx.lineTo(x2, y2);
+            ctx.stroke();
+
+            var d3 = (Math.random() * 0.3 + 0.6);
+            var d4 = (Math.random() * 0.3 + 0.6);
+            var x3 = d * d3 * Math.cos(t) + x;
+            var y3 = d * d3 * Math.sin(t) + y;
+            var x4 = d * d4 * Math.cos(t) + x;
+            var y4 = d * d4 * Math.sin(t) + y;
+
+            window.setTimeout(function() {
+                stroke(ctx, x3, y3, d * (Math.random() * 0.4 + 0.5), t - Math.PI * Math.random(1, 10) * 0.3, step - 1, color);
+                stroke(ctx, x4, y4, d * (Math.random() * 0.4 + 0.5), t + Math.PI * Math.random(1, 10) * 0.3, step - 1, color);
+                stroke(ctx, x2, y2, d * 0.8, t + (Math.PI * (Math.random() * 0.2 - 0.1)), step - 1, color);
+            }, 20)
+        }
+
+        main();
+
+    </script>
 </body>
+
 </html>

@@ -1,7 +1,7 @@
 //공통변수들
 $dupin-color: darkseagreen;
-$i-color:red;
-$g-color:yellow;
+$i-color:#71dcff;
+$g-color:#9971ff;
 $said-size:1.7rem;
 //
 * {
@@ -61,10 +61,12 @@ $said-size:1.7rem;
         font-family: cursive;
         position: absolute;
         left: 0;
+        margin-left: 1rem;
     }
     & > li.list {
         display: inline-block;
         text-align: center;
+        margin: 0 1rem;
     }
     & > li.list:hover {
         border-bottom: 1px solid black;
