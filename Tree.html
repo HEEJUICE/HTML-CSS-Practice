@@ -10,13 +10,7 @@
 <body>
     <canvas width="1000" height="810"></canvas>
     <script>
-        var points = [{
-            x: 300,
-            y: 810,
-            life: 100,
-            age: 0,
-            angle: 0.5 * Math.PI
-        }];
+        var points = [];
         var canvas;
         var ctx;
 
@@ -25,19 +19,33 @@
             ctx = canvas.getContext('2d');
             ctx.strokeStyle = "black";
 
-            window.setTimeout(update, 10);
+            canvas.addEventListener('click', function(e) {
+                //                var ended = points.length === 0;
+                //                if (!ended) return;
+
+                var point = {
+                    x: e.offsetX,
+                    y: 810,
+                    life: Math.floor(Math.random() * 130 + 20),
+                    age: 0,
+                    angle: 0.5 * Math.PI
+                }
+                points.push(point);
+            });
+
+            window.setTimeout(update, 5);
         }
 
         function update() {
-            window.setTimeout(update, 10);
+            window.setTimeout(update, 5);
 
             var newPoints = [];
 
             for (var i = 0; i < points.length; i++) {
                 var point = points[i];
                 ctx.beginPath();
-                ctx.arc(point.x, point.y, point.life * 0.06, 0, 2 * Math.PI, false);
-                ctx.fillStyle = 'black';
+                ctx.arc(point.x, point.y, Math.pow(point.life * 0.05, 2) * 0.11, 0, 2 * Math.PI, false);
+                ctx.fillStyle = 'rgba(0,0,0,0.5)';
                 ctx.fill();
 
                 point.x += Math.cos(point.angle) * 1;
@@ -46,28 +54,36 @@
 
                 if (point.age < point.life) {
                     newPoints.push(point);
-                } else if (point.life > 30) {
-                    newPoints.push({
-                        x: point.x,
-                        y: point.y,
-                        life: Math.round(point.life * (Math.random() * 0.1 + Math.random() * 0.2 + 0.6)),
-                        age: 0,
-                        angle: point.angle - Math.PI * Math.random(1, 10) * 0.3
-                    });
-                    newPoints.push({
-                        x: point.x,
-                        y: point.y,
-                        life: Math.round(point.life * (Math.random() * 0.2 + Math.random() * 0.2 + 0.5)),
-                        age: 0,
-                        angle: point.angle + Math.PI * Math.random(1, 10) * 0.3
-                    });
-                    newPoints.push({
-                        x: point.x,
-                        y: point.y,
-                        life: Math.round(point.life * (Math.random() * 0.2 + Math.random() * 0.2 + 0.6)),
-                        age: 0,
-                        angle: point.angle + Math.PI * Math.random(1, 10) * 0.3
-                    });
+                    if (point.life > 26) {
+                        var r1 = 0.7;
+                        var r2 = 0.8;
+                        var r3 = 0.9;
+                        if (point.age === Math.round(point.life * r1)) {
+                            newPoints.push({
+                                x: point.x - Math.cos(point.angle) * Math.round(point.life * (1 - r1)),
+                                y: point.y + Math.sin(point.angle) * Math.round(point.life * (1 - r1)),
+                                life: Math.round(point.life * (Math.random() * 0.2 + 0.6)),
+                                age: 0,
+                                angle: point.angle - (Math.PI * Math.random() * 0.1 + 0.25)
+                            });
+                        } else if (point.age === Math.round(point.life * r2)) {
+                            newPoints.push({
+                                x: point.x - Math.cos(point.angle) * Math.round(point.life * (1 - r2)),
+                                y: point.y + Math.sin(point.angle) * Math.round(point.life * (1 - r2)),
+                                life: Math.round(point.life * (Math.random() * 0.2 + 0.6)),
+                                age: 0,
+                                angle: point.angle + (Math.PI * Math.random() * 0.1 + 0.25)
+                            });
+                        } else if (point.age === Math.round(point.life * r3)) {
+                            newPoints.push({
+                                x: point.x - Math.cos(point.angle),
+                                y: point.y + Math.sin(point.angle),
+                                life: Math.round(point.life * (Math.random() * 0.2 + 0.7)),
+                                age: 0,
+                                angle: point.angle + (Math.PI * Math.random() * 0.1 - 0.2)
+                            });
+                        }
+                    }
                 }
             }
 
