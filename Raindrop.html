@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="initial-scale=1.0, width=device-width">
+    <title>Raindrop</title>
+    <link href="Raindrop.css" rel="stylesheet">
+
+    <script>
+        var canvas;
+        var ctx;
+        var img;
+
+        var ys = [];
+        var xs = [];
+
+        for (var i = 0; i < 10; i++) {
+            xs[i] = Math.random();
+            ys[i] = 0;
+        }
+
+        function main() {
+            canvas = document.querySelector('#c');
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+
+            ctx = canvas.getContext('2d');
+            img = document.querySelector('.simpson');
+
+            update();
+        }
+
+        var lastUpdate = new Date();
+        var fps = 60;
+
+        function update() {
+            window.requestAnimationFrame(update);
+            var now = new Date();
+            if (now - lastUpdate < (1000 / fps)) return;
+            lastUpdate = now;
+
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            var width;
+            var vel;
+            var i;
+
+            for (var i = 0; i < ys.length; i++) {
+                width = ((i / ys.length) + 0.3) * img.width * 0.5;
+                vel = width / 100;
+                ctx.drawImage(img, xs[i] * (canvas.width - width), ys[i] - width, width, width);
+                ys[i] = ys[i] + vel;
+                if (ys[i] > canvas.height + width) {
+                    ys[i] = 0;
+                }
+                ctx.fillStyle = 'rgba(255,255,255,0.1)';
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+            }
+        }
+
+        window.addEventListener("load", main);
+
+    </script>
+</head>
+
+<body>
+    <canvas id="c"></canvas>
+    <img class="simpson" src="homer-simpson.svg">
+</body>
+
+</html>

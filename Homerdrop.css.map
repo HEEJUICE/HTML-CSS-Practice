@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "Homerdrop.css",
+  "sources": [
+    "Homerdrop.scss"
+  ],
+  "sourcesContent": [],
+  "mappings": ";AAAA,IAAI,CAAC;EACD,MAAM,EAAE,CAAE,GADR;;;AAGN,MAAM,CAAC;EACH,OAAO,EAAE,KAAM,GADX;;;AAGR,QAAQ,CAAC;EACL,OAAO,EAAE,IAAK,GADR",
+  "names": []
+}
